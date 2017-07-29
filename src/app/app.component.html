@@ -1,0 +1,86 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app-wrapper">
+  <section class="center-title">
+   <img src="assets/images/honoring_choices_banner.png">
+   
+  </section>
+<section>
+<div class="container content-wrapper">
+    <p>An Initiative of the Richmond Academy of Medicine working collaboratively with Bon Secours Health
+     System, HCA Virginia Health System, and Virginia Commonwealth University Health System for the benefit
+     of the Greater Richmond community
+   </p>
+    <form class="top40" [formGroup]="sigform" (submit)="submit()" (window:resize)="beResponsive()"> 
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="name">First Name:</label>
+          <input type="text" formControlName="firstName" class="form-control" id="name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="name">Middle Name:</label>
+          <input type="text" formControlName="middleName" class="form-control" id="name" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="name">Last Name:</label>
+          <input type="text" formControlName="lastName" class="form-control" id="name" required>
+        </div>
+      </div>
+        
+      
+      <div class="form-group">
+        <label for="name">Declarent's Signature:</label>
+        
+  <div class="sig-container" #sigContainer1>
+    
+    <div fxLayout="row">
+      <signature-field formControlName="signatureField1"></signature-field>
+    </div>
+  </div>
+ 
+  
+  <div class="pull-right">
+    <button type="button" class="btn btn-default" (click)="clear()" [disabled]="!sigform.signatureField1=='null' && !sigform.signatureField2=='null'">Clear Signature</button>
+    <button type="submit" class="btn btn-success" [disabled]="!sigform=='null'">Submit Signature</button>
+  </div>
+
+      </div>
+ <div class="row top40">
+        <div class="form-group col-md-6">
+          <label for="name">Date of Birth:</label>
+          <input type="date" formControlName="dob" class="form-control" id="dob" required>
+        </div></div>
+        
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="name">Street Address:</label>
+            <input type="text" formControlName="streetAddress" class="form-control" id="streetAddress" required>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="form-group col-md-4">
+            <label for="name">City:</label>
+            <input type="text" formControlName="city" class="form-control" id="city" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="name">State:</label>
+            <input type="text" formControlName="state" class="form-control" id="state" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="name">Zip:</label>
+            <input type="text" formControlName="zip" class="form-control" id="zip" required>
+          </div>
+      </div>
+
+
+ <!-- 
+      <button type="submit" class="btn btn-success">Submit</button> -->
+ 
+    </form>
+    
+</div>  
+
+</section>
+</div>

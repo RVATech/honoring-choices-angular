@@ -1,0 +1,71 @@
+h1.page-title {
+    color: #1f5389;
+    font-size: 30pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+p {
+    color: #1f5389;
+}
+
+.center-title {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.center-title>img {
+    width: 90%;
+}
+.secondary-header {
+    color: #2E86C1;
+    font-size: 15pt;
+    justify-content: flex-start;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-wrapper {
+    padding: 50px;
+}
+
+label {
+    margin-right: 8px;
+}
+
+div.sig-container {
+     border: 1px solid rgba(0,0,0,.15) !important;
+     margin: 20px 0 20px 0;
+     height: 200px;
+     max-height: 200px;
+}
+
+.top20 {
+    margin-top: 20px;
+}
+
+.top40 {
+    margin-top: 40px;
+}
+
+.pull-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    margin-left: 10px;
+}
